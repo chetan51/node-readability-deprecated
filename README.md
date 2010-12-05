@@ -7,7 +7,7 @@ This is a port of [Arc90's Readability](http://lab.arc90.com/experiments/readabi
 Requires:
 
 *	Node.js
-*	[jsdom](https://github.com/tmpvar/jsdom).
+*	[jsdom](https://github.com/tmpvar/jsdom) v0.1.20+
 
 ### Contributors ###
 
