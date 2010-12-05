@@ -1,0 +1,21 @@
+{
+    "name": "node-readability",
+    "version": "1.0.0",
+    "directories": {
+        "lib": "./lib"
+    },
+    "main": "./lib/node-readability",
+    "engines": {
+        "node" : ">=0.1.93"
+    },
+    "dependencies": {
+    },
+    "description": "A port of Arc90's Readability to Node.",
+    "author": "Manoj Mardithaya <mmardithaya@gmail.com>, Chetan Surpur <chetan.surpur@gmail.com>",
+    "homepage": "https://github.com/chetan51/node-readability",
+    "repository" :
+    {
+        "type" : "git",
+        "url" : "git://github.com/chetan51/node-readability.git"
+    }
+}
