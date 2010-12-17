@@ -17,10 +17,12 @@ onmessage = function(message)
 	switch (message.data.command) {
 	case "grabContent":
 		if (message.data.html) {
-			Readability.init(message.data.html, true);
-			var article_element = Readability.grabArticle();
+			var article = Readability.init(message.data.html, true);
 
-			postMessage({ article : article_element.innerHTML });
+			postMessage({
+				title   : article.title.innerHTML,
+				content : article.content.innerHTML
+			});
 		}
 		else {
 			postMessage({ error : "No HTML given." });

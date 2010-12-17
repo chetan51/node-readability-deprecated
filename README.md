@@ -22,8 +22,9 @@ Since Readability is a complex and synchronous script, it will block your server
 
 	w.onmessage = function(message)
 	{
-		if (message.data.article != null) {
-			console.log("Document content: " + message.data.article);
+		if (message.data.title && message.data.content) {
+			console.log("Article title: " + message.data.title);
+			console.log("Article content: " + message.data.content);
 		}
 		else if (message.data.error) {
 			console.log("Unable to grab content from document. Error: " + message.data.error);
